@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #25252d;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ang-clock{
+    background-color: #2d2f41;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+}
+.ang-clock ul{
+    list-style: none;
+}
+.hour-cont{
+    width: 460px;
+}
+.hour-num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hour-num li{
+    position: absolute;
+    height: 100%;
+    top:0;
+}
+.hour-num .num{
+    color: #ceecf6;
+    font-size: 1.6em;
+    font-weight: 400;
+    margin: 10px;
+}
+ .hour-num li:nth-child(1){
+     transform: rotate(90deg);
+ }
+ .hour-num li:nth-child(2){
+    transform: rotate(180deg);
+}
+.hour-num li:nth-child(3){
+    transform: rotate(270deg);
+}
+.hour-num li:nth-child(1).num{
+    transform: rotate(-90deg);
+}
+.hour-num li:nth-child(2).num{
+    transform: rotate(-180deg);
+}
+.hour-num li:nth-child(3).num{
+    transform: rotate(-270deg);
+}
+
+.hour-mark{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hour-mark .mark{
+    background-color: #ceecf6;
+    width: 1px;
+    height: 19px;
+    margin-top: 19px;
+}
+.hour-mark li{
+    position: absolute;
+    height: 100%;
+    top: 0;
+
+}
+
+.hour-mark li:nth-child(1){
+    transform: rotate(30deg);
+}
+.hour-mark li:nth-child(2){
+    transform: rotate(60deg);
+}
+.hour-mark li:nth-child(3){
+    transform: rotate(120deg);
+}
+.hour-mark li:nth-child(4){
+    transform: rotate(150deg);
+}
+.hour-mark li:nth-child(5){
+    transform: rotate(210deg);
+}
+.hour-mark li:nth-child(6){
+    transform: rotate(240deg);
+}
+.hour-mark li:nth-child(7){
+    transform: rotate(300deg);
+}
+.hour-mark li:nth-child(8){
+    transform: rotate(330deg);
+}
